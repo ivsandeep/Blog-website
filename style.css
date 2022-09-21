@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color:#0f0f0f;
+    --midnight:#104f55;
+    --sky:background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+/* global classes */
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
+
+/* navbar */
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 13vh;
+    overflow: hidden;
+
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: gray;
+}
+.nav .nav-items{
+    list-style: none;
+    display: flex;
+    margin: 0;
+
+}
+.nav .nav-items .nav-link{
+    padding: 1.6em 1em;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: #906a34c0;
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+.nav .brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.nav .social{
+    padding: 1.4em 0;
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+.nav .social i:hover{
+    color: #906a34c0;
+}
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+
+img{
+    width: 100%;
+}
